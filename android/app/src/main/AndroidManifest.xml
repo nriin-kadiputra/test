@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.heremaps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="JRICnrAqyfRry1tytePQ" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="BztboOBFiukKg65Olg46rw" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="BluhBQN7UBhqb5E290c2NPRvgyfxpOj3s2nsFlUpEUMzaP7lTB672YVdkfBKqq0F2tkuPsEdZCHUj06QylUj9KS8XLiu9ia1Z1RE8/0NTCQ00kCJysrbHotKQ0s+V1fleIw+lATQ8dT1dX+3ymQUlFCHzzvK1Oj55qrqGPbCHKoQ9Ue4gii4dZgBrT+IcXUnJw4+2jcSOD5wSRjtL32RpDveq78d1RChmGpmRA3hcAtcQ/oS1JOhnjKSnrHOxqWl5KEa2BJlF+ZdHNBw/20FnAMU0fxYSqoGwaJdlivN8aD782wRJg8tl+iNW1WrRprl5SKMb98rzEWSfUZP+cyPsIo1GYNLwBzi71MvnsqvMe6d3bJBkKug1wpxRVKsgidISS/UfkBXAMwNs0ZxVO3oNRmFM7qU8cGQ8wzP4C3J2rQFdNT5MgdxBto/XG12FdBREUh6Jqi9S/hoOKda6Ql5puRCPlCbfx/IFSQWDVx28oFVVHx29hEHl/m7fbZIQO+EMbF9O/7IxHc0rHkjqWKfNDCJrS8K6wlu4Xa4PVUnt7YhxbLsYTXYZHja5YCrbkxPY0dE6GWcAbbDSp1iRWCKbGw1yXSHsN6F5ophFM5rE7gX2/wx0cwgu7bL/DoSiuB44YWOrdoolMPlfh/whZQTN5STAi5oAxk3EEIOKfSwq8c=" />
+
+    </application>
+
+</manifest>
